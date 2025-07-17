@@ -1,27 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/58ec5d97b5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>TA3LIM</title>
+    <link rel="stylesheet" href="header.css">
+    <title>تعليم</title>
 </head>
 <body>
     <header>
         <div class="header_logos">
             <a class="header_logo" href="" >
-                <span class="logo_label" aria-label="accueil">TA3LIM</span>
+             تعليم
             </a>
         </div>
         <nav>
-            <ul class="header_nav">
+           <ul class="sections_links">
+               <li>
+                 <a href="#" class="section_link" aria-label="الانتقال إلى دروس">
+                   <span class="section_link_label">دروس</span>
+                 </a>
+               </li>
+               <li>
+                 <a href="#" class="section_link" aria-label="الانتقال إلى تمارين">
+                   <span class="section_link_label">تمارين</span>
+                 </a>
+               </li>
+               <li>
+                 <a href="#" class="section_link" aria-label="الانتقال إلى امتحانات">
+                   <span class="section_link_label">امتحانات</span>
+                 </a>
+               </li>
+               <li>
+                 <a href="#" class="section_link" aria-label="الانتقال إلى المفضلة">
+                   <span class="section_link_label">المفضلة</span>
+                 </a>
+               </li>
+           </ul>
+           
+            <ul class="login_signup">
                 <li>
-                    <a class="button button_login" aria-label="Se connecter" href=""><span class="button_label">Se connecter</span></a>
+                    <a class="button_principal button_login" aria-label="Se connecter" href=""><span class="button_label">تسجيل الدخول</span></a>
                 </li>
                 <li>
-                    <a class="button button_signup" aria-label="Créer un compte" href=""><span class="button_label">Créer un compte</span></a>
+                    <a class="button_principal button_signup" aria-label="Créer un compte" href=""><span class="button_label">إنشاء حساب</span></a>
                 </li>
             </ul>
+            <div class="header_menu">
+                <i class="fa-solid fa-bars menu_bars"></i>
+                <i class="fa-solid fa-xmark menu_out"></i>
+            </div>
         </nav>
     </header>
 </body>

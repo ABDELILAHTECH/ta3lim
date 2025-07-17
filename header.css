@@ -1,5 +1,7 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+
 :root {
   /* 🎨 Couleurs principales */
   --color-primary: #6366F1;       /* Indigo – bouton principal, liens actifs */
@@ -41,33 +43,131 @@
   --z-tooltip: 3000;    /* Pour les bulles d'information */
 }
 
-*{
-    font-family: var(--font-heading);
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 20px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(218, 210, 210);
 }
-a{
-    text-decoration: none;
-    color: black;
+.header_logos{
+    padding: 6px 10px;
+    font-weight: 700;
+    font-size: clamp(24px, 5vw, 40px);
+    font-family: "Cairo";
 }
-ul{
-    list-style: none;
+.header_logos a{
+    color: #6366F1;
 }
-.header_logo,.button{
+.login_signup , nav , .sections_links{
+    display: flex;
+    align-items: center;
+    
+}
+
+nav,.login_signup{
+    gap: 20PX;
+}
+.sections_links{
+    margin-left: 300px;
+    padding:5px 50px;
+    gap: 30PX;
+}
+.section_link_label{
+    color: var(--color-text-primary);
+    font-size: var(--text-xl);
+    font-weight: 700;
+}
+.section_link:hover .section_link_label{
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+.button_login:hover{
+    background-color: #f0f0f0;
+}
+.button_signup{
+    background-color: var(--color-primary);
+    color: white;
+}
+.button_signup:hover {
+   
+}
+.header_menu{
+    position: absolute;
+    height: 47px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
 }
-
-.button_principal{
-    display: inline-block;
-    padding: var(--space-sm) var(--space-md);
-    border: var(--color-primary) solid 2px;
-    font-size: var(--text-lg);
-    border-radius: var(--radius);
-    font-weight: 600;
-}
-.button_principal:hover {
-  opacity: 0.9;
-  transition: var(--transition);
+.header_menu i{
+    font-size: 37px;
+    position: absolute;
+    display: none;
+    color: var(--color-text-primary);
 }
 
+
+@media (max-width: 480px) {
+  :root {
+    --font-size-base: 14px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ========== Medium devices (tablettes entre 481px et 768px) ========== */
+@media (min-width: 481px) and (max-width: 768px) {
+  :root {
+    --font-size-base: 15px;
+  }
+
+  .sections_links{
+    display: none;
+  }
+ 
+ .header_menu{
+    position: relative;
+  }
+  .header_menu .menu_bars{
+    display: block;
+  }
+
+}
+
+/* ========== Large devices (ordinateurs entre 769px et 1024px) ========== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  :root {
+    --font-size-base: 16px;
+  }
+  .sections_links{
+    display: none;
+  }
+  .header_menu{
+    position: relative;
+  }
+  .header_menu .menu_bars{
+    display: block;
+ }
+
+}
+
+/* ========== Extra large devices (grands écrans >= 1025px) ========== */
+@media (min-width: 1025px) {
+  :root {
+    --font-size-base: 18px;
+  }
+
+ 
+}
