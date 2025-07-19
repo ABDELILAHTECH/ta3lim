@@ -1,4 +1,3 @@
-
 :root {
   /* 🎨 Couleurs principales */
   --color-primary: #6366F1;       /* Indigo – bouton principal, liens actifs */
@@ -40,134 +39,148 @@
   --z-tooltip: 3000;    /* Pour les bulles d'information */
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    left: 0%;
-    right: 0%;
-    padding: 2px 20px;
+main{
+    padding-top:95px;
     background-color: var(--color-background);
-    box-shadow: 0 3px 10px rgb(218, 210, 210);
 }
-.header_logos{
-    padding: 6px 10px;
-    font-weight: 700;
-    font-size: clamp(24px, 5vw, 40px);
-    font-family: "Cairo";
-}
-.header_logos a{
-    color: #6366F1;
-}
-.login_signup , nav , .sections_links{
+section{
     display: flex;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 100px;
+}
+.hero{
+    height: calc(100vh - 91px);
+    justify-content: center;
+    gap: 10PX;
+    margin-bottom: 0px;
+}
+.hero h1{
+    height: 80px;  
+    color: var(--color-text-primary);
+    text-align: center;
+    padding: 0px 60px;  
+}
+.hero p{
+    font-size: var(--text-xl);
+    color: var(--color-text-secondary);
+    text-align: center;
+    padding:0 50px; 
     
 }
-
-nav,.login_signup{
-    gap: 20PX;
-}
-.sections_links{
-    margin-left: 300px;
-    padding:5px 50px;
-    gap: 30PX;
-}
-.section_link_label{
-    color: var(--color-text-primary);
-    font-size: var(--text-xl);
-    font-weight: 700;
-}
-.section_link:hover .section_link_label{
-    color: var(--color-primary);
-    transition: var(--transition);
-}
-
-.button_login:hover{
-    background-color: #f0f0f0;
-}
-.button_signup{
+.hero button{
     background-color: var(--color-primary);
-    color: white;
+    padding: var(--space-sm) var(--space-xl);
+    font-size: var(--text-xl);
+    margin-top: 30px;
 }
-.button_signup:hover {
-   
+.hero i{
+    margin-left: 15px;
 }
-.header_menu{
-    position: absolute;
-    height: 47px;
-    width: 60px;
+
+.cards{
+    display: grid;
+    justify-content: center;
+    gap: 25PX; 
+    width: 100vw;
+}
+.why_ta3lim_cards,.resources_cards,.niveaux_cards{
+    border-radius: 28px; 
+    padding: 50px;
+}
+.resources_cards,.niveaux_cards{
+    grid-template-columns: 280px 280px 280px;
+}
+.why_ta3lim_cards{
+    grid-template-columns: 270px 270px 270px 270px;
+    background-color: var(--color-secondary);
+}
+.resources_cards{
+    background-color: var(--color-accent);
+    
+}
+.niveaux_cards{
+    background-color: var(--color-primary);
+}.niveaux_card{
+    background-color: var(--color-accent);
+}
+.why_ta3lim_card{
+    background-color: white;
+}
+.resources_card{
+    background-color: #10B981;
+    color: #e2e8f0;
+}
+.card{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    border-radius: 18px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 40px 10px;
 }
-.header_menu i{
-    font-size: 37px;
-    position: absolute;
-    display: none;
-    color: var(--color-text-primary);
+section h2{
+    margin-bottom: 30px; 
+    padding-bottom: 5px;
+    border-bottom: 4px solid var(--color-primary);
 }
-
-
-@media (max-width: 480px) {
-  :root {
-    --font-size-base: 14px;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .button {
-    width: 100%;
+.card p{
+    font-size: 20px;
     text-align: center;
-  }
+    padding: 10px 10px; 
+    white-space: pre-line;
+} 
+.card i{
+    font-size: 50px;
+    padding: 20px;
 }
 
-/* ========== Medium devices (tablettes entre 481px et 768px) ========== */
-@media (min-width: 481px) and (max-width: 768px) {
-  :root {
-    --font-size-base: 15px;
-  }
 
-  .sections_links{
-    display: none;
-  }
- 
- .header_menu{
-    position: relative;
-  }
-  .header_menu .menu_bars{
-    display: block;
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 625px) {
+    .why_ta3lim_cards{
+        grid-template-columns: 1fr;
+       
+     }
+  
+}
+
+@media (max-width:876px) {
+      .resources_cards,.niveaux_cards{
+           grid-template-columns: 1fr;
+      }
 
 }
 
-/* ========== Large devices (ordinateurs entre 769px et 1024px) ========== */
-@media (min-width: 769px) and (max-width: 1024px) {
-  :root {
-    --font-size-base: 16px;
-  }
-  .sections_links{
-    display: none;
-  }
-  .header_menu{
-    position: relative;
-  }
-  .header_menu .menu_bars{
-    display: block;
- }
+@media (min-width: 580px) and (max-width: 1110px) {
+     .why_ta3lim_cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+     }
+    .why_ta3lim_card{
+       
+    }
 
 }
 
-/* ========== Extra large devices (grands écrans >= 1025px) ========== */
-@media (min-width: 1025px) {
-  :root {
-    --font-size-base: 18px;
-  }
-
- 
-}
