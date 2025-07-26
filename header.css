@@ -116,22 +116,6 @@ nav,.login_signup{
     color: var(--color-text-primary);
 }
 
-
-@media (max-width: 480px) {
-  :root {
-    --font-size-base: 14px;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .button {
-    width: 100%;
-    text-align: center;
-  }
-}
 @media (max-width: 1225px){
    .sections_links{
     display: none;
