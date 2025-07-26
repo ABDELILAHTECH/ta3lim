@@ -85,7 +85,7 @@ section{
 }
 .why_ta3lim_cards,.resources_cards,.niveaux_cards{
     border-radius: 28px; 
-    padding: 50px;
+    padding: 50px 30px;
 }
 .why_ta3lim_cards{
     grid-template-columns: 320px 320px 320px 320px;
@@ -200,11 +200,12 @@ section h2{
     }
 
 }
-@media (max-width: 1212px){
+@media (max-width: 1212px) and (min-width:481px){
     .hero_content{
         max-width: 400px;
     }
 }
+
 @media (min-width: 580px) and (max-width: 1211px) {
     
      .why_ta3lim_cards{
@@ -229,4 +230,15 @@ section h2{
        
      }
   
+}
+@media (max-width: 480px){
+    .hero_content{
+        max-width: 360px;
+        padding: 30px;
+    }
+}
+@media (max-width: 401px){
+    .cards{
+        padding: 50px 20px;
+    }
 }
