@@ -132,13 +132,8 @@ nav,.login_signup{
     text-align: center;
   }
 }
-
-/* ========== Large devices (ordinateurs entre 769px et 1024px) ========== */
-@media (min-width: 769px) and (max-width: 1224px) {
-  :root {
-    --font-size-base: 16px;
-  }
-  .sections_links{
+@media (max-width: 1225px){
+   .sections_links{
     display: none;
   }
   .header_menu{
@@ -147,14 +142,15 @@ nav,.login_signup{
   .header_menu .menu_bars{
     display: block;
  }
+}
+
+@media (min-width: 769px) and (max-width: 1224px) {
 
 }
 
-/* ========== Extra large devices (grands écrans >= 1025px) ========== */
-@media (min-width: 1025px) {
-  :root {
-    --font-size-base: 18px;
+@media (max-width: 768px) {
+  .button_login,.button_signup{
+    display: none;
   }
-
  
 }
