@@ -183,43 +183,8 @@ section h2{
 
 
 
-@media (max-width: 625px) {
-    .why_ta3lim_cards{
-        grid-template-columns: 1fr;
-       
-     }
-  
-}
-
-@media (max-width: 720px) {
-    .hero{
-       
-    }
-  
-}
-
-@media (max-width: 498px) {
-    .button_principal{
-        display: none;
-       
-     }
-  
-}
 
 
-@media (max-width:940px) {  
-      .resources_cards,.niveaux_cards{ 
-           grid-template-columns: 1fr;
-      }
-
-}
-
-@media (min-width: 941px) and (max-width: 1185px) {
-    .resources_cards,.niveaux_cards{
-     grid-template-columns: 1fr 1fr 1fr;
-    }
-
-}
 @media (min-width: 1212px) and (max-width: 1452px) {
    
     .why_ta3lim_cards{
@@ -229,10 +194,19 @@ section h2{
 
 }
 
-@media (min-width: 580px) and (max-width: 1211px) {
-    .hero_content{
-        width: 400px; 
+@@media (min-width: 941px) and (max-width: 1185px) {
+    .resources_cards,.niveaux_cards{
+     grid-template-columns: 1fr 1fr 1fr;
     }
+
+}
+@media (max-width: 1212px){
+    .hero_content{
+        max-width: 400px;
+    }
+}
+@media (min-width: 580px) and (max-width: 1211px) {
+    
      .why_ta3lim_cards{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -242,4 +216,17 @@ section h2{
     }
 
 }
+@media (max-width:940px) {  
+      .resources_cards,.niveaux_cards{ 
+           grid-template-columns: 1fr;
+      }
 
+}
+
+@media (max-width: 625px) {
+    .why_ta3lim_cards{
+        grid-template-columns: 1fr;
+       
+     }
+  
+}
