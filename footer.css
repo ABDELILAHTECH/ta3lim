@@ -41,7 +41,7 @@
 footer{
     background-color: var(--color-text-primary);
     color: white;
-    padding: 20px 100px;
+    padding: 20px 30px;
 }
 .footer_logos_description{
     display: flex;
@@ -58,7 +58,7 @@ footer{
 }
 .footer_description{
     font-size: 25px;
-    width: 400px;
+    
 }
 .footer_email p{
     font-size: 17px;
