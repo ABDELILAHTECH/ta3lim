@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #4F9DFF;
+  --color-secondary: #4CAF50;
+  --color-accent: #A259FF;
+  --color-bg: #F9FAFB;
+  --color-text: #1F2937;
+  --color-muted: #6B7280;
+  
+  --font-family-titles: 'Noto Kufi Arabic', sans-serif;
+  --font-family-body: 'Cairo', sans-serif;
+  
+  --radius: 8px;
+  
+  --transition-timing-function: ease-in-out;
+  --transition-duration: 300ms;
+}
