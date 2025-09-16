@@ -1,11 +1,50 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import NavLink from './NavLink'
+import {ThemeContext} from "../Context/ThemeContext"
+import { Moon, Sun } from 'lucide-react'
+import AppLogo from './AppLogo'
 
 export default function NavBar() {
+  const {theme,toggleTheme} = useContext(ThemeContext)
+  const navLinks = [
+    {
+      name:"دروس",
+      path:"/lessons"
+    },
+    {
+      name:"تمارين",
+      path:"/exercises"
+    },
+    {
+      name:"امتحانات",
+      path:"/exams"
+    },
+    {
+      name:"المقضلة",
+      path:"/favorite"
+    },
+  ]
   return (
-    <header className='bg-black'>
+    <header className='bg-light dark:bg-slate-900 fixed left-0 right-0 flex items-center justify-between px-5 py-5  md:px-12 lg:px-50 '>
         <div>
-            <span className='text-primary'>تعليم</span>
+            <AppLogo />
         </div>
+        <nav>
+          <ul className='flex gap-2 items-center'> 
+            {
+              navLinks.map((navlink,index)=>
+              <li key={index} className='px-2 py-1 font-medium   dark:text-white font-cairo hover:text-primary transition-colors duration-300 ease-in-out"'>
+                <NavLink 
+                navLinkName={navlink.name}
+                 navLinkPath={navlink.path}
+              />
+              </li>)
+            }
+            <li onClick={toggleTheme}>
+              {theme === "dark" ? <Moon color="white" /> : <Sun />}
+            </li>
+          </ul>
+        </nav>
     </header>
   )
 }

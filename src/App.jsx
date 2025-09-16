@@ -1,11 +1,12 @@
-import NavBar from "./Components/NavBar";
-import { ThemeContext } from "./Context/ThemeContext.jsx";
+import NavBar from "./Components/NavBar"
 
-export default function App() {
-  
+function App() {
+
   return (
     <>
       <NavBar />
-    </>  
+    </>
   )
 }
+
+export default App;

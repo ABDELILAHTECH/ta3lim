@@ -1,18 +1,31 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-primary: #4F9DFF;
   --color-secondary: #4CAF50;
   --color-accent: #A259FF;
-  --color-bg: #F9FAFB;
+  --color-light: #F9FAFB;
+  --color-dark: #0F172B;
   --color-text: #1F2937;
   --color-muted: #6B7280;
   
-  --font-family-titles: 'Noto Kufi Arabic', sans-serif;
-  --font-family-body: 'Cairo', sans-serif;
+  --font-kufi: 'Noto Kufi Arabic', sans-serif;
+  --font-cairo: 'Cairo', sans-serif;
+  --font-schoolbell: "Schoolbell", cursive;
   
   --radius: 8px;
   
   --transition-timing-function: ease-in-out;
   --transition-duration: 300ms;
+}
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
 }
