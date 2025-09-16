@@ -7,8 +7,9 @@ export default function Hero() {
 
 
   return (
-    <section className=' font-cairo bg-light  relative lg:px-50 dark:bg-slate-900 h-screen flex flex-col  items-center justify-center '>
-        <div className='flex flex-col items-center  '>
+    <section className=' font-cairo bg-light dark:bg-slate-900 '>
+        <div className='relative lg:mx-50 h-screen flex flex-col  items-center justify-center'>
+           <div className='flex flex-col items-center  '>
             <h1 className='text-center font-bold dark:text-white text-6xl md:text-7xl lg:text-8xl mb-8'>
                 منصة التعلم
                 <br />
@@ -23,6 +24,7 @@ export default function Hero() {
           <StatisticsCards />
         </div>
         <FloatingIcons />
+        </div>
     </section>
 
   )
