@@ -17,8 +17,9 @@ export default function LevelsCards() {
         },
     ]
   return (
-    <div className='w-[90%] lg:w-full lg:px-50 flex flex-col m-auto gap-5 py-15  md:flex-row items-center justify-center'>
-       <h2 className='text-4xl font-bold dark:text-white mb-7'>المستويات</h2>
+    <div className='py-15 flex flex-col items-center'>
+        <h2 className='text-4xl font-bold dark:text-white mb-10'>المستويات</h2>
+        <div className='w-[90%] lg:w-full lg:px-50 flex flex-col m-auto gap-5  md:flex-row items-center justify-center'>
        {
         levels.map((level,index)=>{
             return(
@@ -36,5 +37,7 @@ export default function LevelsCards() {
         })
        }
     </div>
+    </div>
+    
   )
 }

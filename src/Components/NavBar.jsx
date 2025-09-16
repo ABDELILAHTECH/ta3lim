@@ -25,7 +25,7 @@ export default function NavBar() {
     },
   ]
   return (
-    <header className='bg-light dark:bg-slate-900 fixed left-0 right-0 flex items-center justify-between px-5 py-5  md:px-12 lg:px-50 '>
+    <header className='bg-light dark:bg-slate-900 fixed left-0 right-0 flex items-center justify-between px-5 py-5  md:px-12 lg:px-50 z-100' >
         <div>
             <AppLogo />
         </div>
