@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import NavLink from './NavLink'
 import {ThemeContext} from "../Context/ThemeContext"
-import { Moon, Sun } from 'lucide-react'
+import { BookOpen, FileText, GraduationCap, Heart, Moon, Sun } from 'lucide-react'
 import AppLogo from './AppLogo'
 
 export default function NavBar() {
@@ -9,19 +9,23 @@ export default function NavBar() {
   const navLinks = [
     {
       name:"دروس",
-      path:"/ressources"
+      path:"/ressources",
+      icon:BookOpen,
     },
     {
       name:"تمارين",
-      path:"/ressources"
+      path:"/ressources",
+      icon:FileText,
     },
     {
       name:"امتحانات",
-      path:"/ressources"
+      path:"/ressources",
+      icon:GraduationCap,
     },
     {
       name:"المقضلة",
-      path:"/favorite"
+      path:"/favorite",
+      icon:Heart,
     },
   ]
   return (
@@ -29,21 +33,24 @@ export default function NavBar() {
         <div>
             <AppLogo />
         </div>
-        <nav>
-          <ul className='flex gap-2 display-none items-center'> 
+        <nav className='flex gap-3 '>
+          <ul className='flex gap-2 sm:gap-5 items-center'> 
             {
               navLinks.map((navlink,index)=>
-              <li key={index} className='px-2 py-1 text-xl lg:text-2xl font-medium  hidden sm:block  dark:text-white font-cairo hover:text-primary transition-colors duration-300 ease-in-out"'>
+              <li key={index} className=' flex justify-start gap-2  text-md w-8 sm:w-fit overflow-hidden hover:overflow-visible hover:ml-15   md:text-lg  lg:text-xl font-medium  dark:text-white font-cairo hover:text-primary transition duration-300 ease-in-out'>
+                <div className='sm:hidden'>
+                  <navlink.icon  />
+                </div>
                 <NavLink 
                 navLinkName={navlink.name}
                  navLinkPath={navlink.path}
               />
               </li>)
             }
-            <li onClick={toggleTheme} className='mr-5'>
-              {theme === "dark" ? <Moon color="white" className=''/> : <Sun />}
-            </li>
           </ul>
+          <div onClick={toggleTheme} className=''>
+              {theme === "dark" ? <Moon color="white" className=''/> : <Sun />}
+          </div>
         </nav>
     </header>
   )

@@ -17,7 +17,7 @@ export default function LevelsCards() {
         },
     ]
   return (
-    <div className='flex flex-col items-center'>
+    <div className='py-20 flex flex-col items-center'>
         <h2 className='text-4xl font-bold dark:text-white mb-10'>المستويات</h2>
         <div className='w-[90%] lg-px-30 xl:px-50 flex flex-col gap-5 md:flex-row '>
        {
