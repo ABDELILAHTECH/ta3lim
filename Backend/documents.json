@@ -1,14 +1,14 @@
 [
   {
     "title": "الفرض الأول المرحلة الأولى",
-    "type": "المراقبة المستمرة",
+    "type": "الفروض",
     "subject": "الرياضيات",
     "class": "السنة الاولى",
     "level":"الابتدائي",
     "fileUrl": "https://drive.google.com/file/d/1A97d0f3QUk1AxSCVYPfQNf-5rkcYIgFP/view?usp=sharing"
   },
   {
-    "title": "Limites et continuité part 1",
+    "title": "Limites et continuité part 1 svt-pc",
     "type": "الدروس",
     "subject": "الرياضيات",
     "class": "السنة التانية باكالوريا",
@@ -16,7 +16,7 @@
     "fileUrl": "https://drive.google.com/file/d/1n1InEhaGLdyYFO7SM6VtiTaIoQpRVCpl/view?usp=sharing"
   },
   {
-    "title": "Limites et continuité part 2",
+    "title": "Limites et continuité part 2 svt-pc",
     "type": "الدروس",
     "subject": "الرياضيات",
     "class": "السنة التانية باكالوريا",
@@ -24,7 +24,7 @@
     "fileUrl": "https://drive.google.com/file/d/1FzyhfqYdQe-4QHWx3xfkyq-BqJeWJpUT/view?usp=drive_link"
   },
   {
-    "title": "Limites et continuité part 3",
+    "title": "Limites et continuité part 3 svt-pc",
     "type": "الدروس",
     "subject": "الرياضيات",
     "class": "السنة التانية باكالوريا",
@@ -32,12 +32,316 @@
     "fileUrl": "https://drive.google.com/file/d/1Si0EFv0oSU8LSmEbs2OVh1V4wUVPpqRx/view?usp=drive_link"
   },
   {
-    "title": "Limites et continuité part 4",
+    "title": "Limites et continuité part 4 svt-pc",
     "type": "الدروس",
     "subject": "الرياضيات",
     "class": "السنة التانية باكالوريا",
     "level":"الثانوي",
     "fileUrl": "https://drive.google.com/file/d/1feLrvVTtfB98r2q-dGNa8KBozrqFOTIO/view?usp=drive_link"
+  },
+  {
+    "title": "devoir-1-svt-pc-1er-semestre-modele-1",
+    "type": "الفروض",
+    "subject": "الرياضيات",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1jrJ9JeIb_dX6dV3QnUKimUzNI1uoliHK/view?usp=drive_link"
+  },
+  {
+    "title": "devoir-1-svt-pc-1er-semestre-modele-2",
+    "type": "الفروض",
+    "subject": "الرياضيات",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1_fPmoADno8BQdMjF-3mZPnZYzJHMPl3E/view?usp=drive_link"
+  },
+  {
+    "title": "devoir-2-svt-pc-1er-semestre-modele-1",
+    "type": "الفروض",
+    "subject": "الرياضيات",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1u97JYXi-X1DxPc1LlMd4FGQutIS39MDH/view?usp=drive_link"
+  },
+  {
+    "title": "devoir-2-svt-pc-1er-semestre-modele-2",
+    "type": "الفروض",
+    "subject": "الرياضيات",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1WQVacsdmM2l03-50Q46lRBvCgfvwZWGD/view?usp=drive_link"
+  },
+  {
+    "title": "devoir-3-svt-pc-1er-semestre-modele-1",
+    "type": "الفروض",
+    "subject": "الرياضيات",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1c_hkthmh8VcJftjWbdEZ4tj0jsmXT5j3/view?usp=drive_link"
+  },
+  {
+    "title": "devoir-3-svt-pc-1er-semestre-modele-2",
+    "type": "الفروض",
+    "subject": "الرياضيات",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/12EfZd7qNO6i3zuhakqEwO7j1fPpDMN2R/view?usp=drive_link"
+  },
+  {
+    "title": "devoir-1-svt-pc-2nd-semestre-modele-1",
+    "type": "الفروض",
+    "subject": "الرياضيات",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1aKFShxK0IKknydV9y550K7m9UVVdMpBz/view?usp=drive_link"
+  },
+  {
+    "title": "devoir-1-svt-pc-2nd-semestre-modele-2",
+    "type": "الفروض",
+    "subject": "الرياضيات",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1gxsIs62gwUqPN3Hzy6eltREPkNJsiKvy/view?usp=drive_link"
+  },
+  {
+    "title": "devoir-2-svt-pc-2nd-semestre-modele-1",
+    "type": "الفروض",
+    "subject": "الرياضيات",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1DxqkdVAD4cLfBhZ3YaUbMY3H1awh2c1s/view?usp=drive_link"
+  },
+  {
+    "title": "devoir-2-svt-pc-2nd-semestre-modele-2",
+    "type": "الفروض",
+    "subject": "الرياضيات",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1JR5XAu_w1vuUZ4gmj_1dF8-phAchWjyb/view?usp=drive_link"
+  },
+  {
+    "title": "devoir-3-svt-pc-2nd-semestre-modele-1",
+    "type": "الفروض",
+    "subject": "الرياضيات",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1sqLd4sGNAgPer_xl4YRKGgZYQ7k0s5Pf/view?usp=drive_link"
+  },
+   {
+    "title": "Derivation et etude des fonctions part 1 pc/svt",
+    "type": "الدروس",
+    "subject": "الرياضيات",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1n1InEhaGLdyYFO7SM6VtiTaIoQpRVCpl/view?usp=drive_link"
+  },
+   {
+    "title": "Derivation et etude des fonctions part 2 pc/svt",
+    "type": "الدروس",
+    "subject": "الرياضيات",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1FzyhfqYdQe-4QHWx3xfkyq-BqJeWJpUT/view?usp=drive_link"
+  },
+  {
+    "title": "Derivation et etude des fonctions part 3 pc/svt",
+    "type": "الدروس",
+    "subject": "الرياضيات",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1Si0EFv0oSU8LSmEbs2OVh1V4wUVPpqRx/view?usp=drive_link"
+  },
+   {
+    "title": "Derivation et etude des fonctions part 4 pc/svt",
+    "type": "الدروس",
+    "subject": "الرياضيات",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1feLrvVTtfB98r2q-dGNa8KBozrqFOTIO/view?usp=drive_link"
+  },
+   {
+    "title": "Suites numeriques part 1 svt/pc",
+    "type": "الدروس",
+    "subject": "الرياضيات",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1ivhpTl2_-BPGQc_t0MgrUXvPkp1hhm-8/view?usp=drive_link"
+  },
+   {
+    "title": "Suites numeriques part 2 svt/pc",
+    "type": "الدروس",
+    "subject": "الرياضيات",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1BCxbBjXh1tt-dxm6ua-N5WK8BdzXja3n/view?usp=drive_link"
+  },
+   {
+    "title": "Suites numeriques part 3 svt/pc",
+    "type": "الدروس",
+    "subject": "الرياضيات",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/10KRZtddH9xuJcoibaoEe6Br5hPUzqxt3/view?usp=drive_link"
+  },
+   {
+    "title": "Ondes mecaniques progressives part1",
+    "type": "الدروس",
+    "subject": "الفيزياء",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1gBLYJ7WHU-s_8eoe64xiziCDxi3NZaUS/view?usp=drive_link"
+  },
+  {
+    "title": "Ondes mecaniques progressives part2",
+    "type": "الدروس",
+    "subject": "الفيزياء",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1WW7krtuFY8BDpmbQ8dDvcjYYv6EtYLs1/view?usp=drive_link"
+  },
+  {
+    "title": "Exercices ondes mecaniques progressives",
+    "type": "الدروس",
+    "subject": "الفيزياء",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1lJgYGS8XA7_Auxoa3Oz-T82AecYIw788/view?usp=drive_link"
+  },
+  {
+    "title": "Exercices ondes mecaniques progressives periodiques ",
+    "type": "الدروس",
+    "subject": "الفيزياء",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1e1HDPsOS7q4OCsYz7LFtCp9fUgmI9-CW/view?usp=drive_link"
+  },
+  {
+    "title": "Ondes mecaniques progressives periodiques part1",
+    "type": "الدروس",
+    "subject": "الفيزياء",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1lH1pIn38Igg_kKJ8mUlLwkrdcCi43U8b/view?usp=drive_link"
+  },
+  {
+    "title": "Ondes mecaniques progressives periodiques part2",
+    "type": "الدروس",
+    "subject": "الفيزياء",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1gme_WwTIyrNaqSDlfBQqjrNWpFoxrGlx/view?usp=drive_link"
+  },
+  {
+    "title": "propagation des ondes lumineuses",
+    "type": "الدروس",
+    "subject": "الفيزياء",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1YfV3cwVASA-O1SKeyH39JlNfRiGuJq0C/view?usp=drive_link"
+  },
+  {
+    "title": "Decroissance radioactive ",
+    "type": "الدروس",
+    "subject": "الفيزياء",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1SWgvDb_6_T7inAg74WRFjFCbFsQ3KYiN/view?usp=drive_link"
+  },
+  {
+    "title": "Exercices role du muscle strie squelettique ",
+    "type": "التمارين",
+    "subject": "علوم الحياة و الأرض",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1giNZmgkKzRC-Gy5kjQBYz5nwWB12mZX8/view?usp=drive_link"
+  },
+  {
+    "title": "Exercices formal informal and non formal education",
+    "type": "التمارين",
+    "subject": "الانجليزية",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1n_pgfV6xQXRARA100Jlw1h6FIPcb9b_6/view?usp=drive_link"
+  },
+  {
+    "title": "Exercices gifts of youth ",
+    "type": "التمارين",
+    "subject": "الانجليزية",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1Lat9Xh5bZpwelrRyeGWjlt5Ax9OLNx3-/view?usp=drive_link"
+  },
+   {
+    "title": "lesson gifts of youth ",
+    "type": "الدروس",
+    "subject": "الانجليزية",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1n-ZvbXLKJB3I3XDG1LgzpSNceRIv_gIJ/view?usp=drive_link"
+  },
+ {
+    "title": "Exercices formal informal and non formal education",
+    "type": "التمارين",
+    "subject": "الانجليزية",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1n_pgfV6xQXRARA100Jlw1h6FIPcb9b_6/view?usp=drive_link"
+  },
+  {
+    "title": "تمارين التمييز",
+    "type": "التمارين",
+    "subject": "اللغة العربية",
+    "class": "السنة الاولى باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1FolQgwbX1nPLvg84GexsUgAXPx2gz58t/view?usp=drive_link"
+  },
+   {
+    "title": "تمارين الممنوع من الصرف",
+    "type": "التمارين",
+    "subject": "اللغة العربية",
+    "class": "السنة الاولى باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1JG61X3qAV10TGdNN8FH2R3y_aa4EQXBc/view?usp=drive_link"
+  },
+   {
+    "title": "درس الحال",
+    "type": "الدروس",
+    "subject": "اللغة العربية",
+    "class": "السنة الاولى باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1QyXodp8Ta7O_ud36uH4ak5FYsCandLeT/view?usp=drive_link"
+  },
+   {
+    "title": "درس التمييز",
+    "type": "الدروس",
+    "subject": "اللغة العربية",
+    "class": "السنة الاولى باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1RqgNpG-jrPKvoHOdjtIGAFN7-JHCYmZx/view?usp=drive_link"
+  },
+   {
+    "title": "درس الممنوع من الصرف",
+    "type": "الدروس",
+    "subject": "اللغة العربية",
+    "class": "السنة الاولى باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1tni_XEyjpZ0rfccNL9fLr8iLn8Jca_w9/view?usp=drive_link"
+  },
+   {
+    "title": "الفرض 1 الدورة 1",
+    "type": "الفروض",
+    "subject": "اللغة العربية",
+    "class": "السنة الاولى باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1poxn0FVSy1MU1a8AP21rJyyFUgTViyl4/view?usp=drive_link"
+  },
+   {
+    "title": "الفرض 2 الدورة 2",
+    "type": "الفروض",
+    "subject": "اللغة العربية",
+    "class": "السنة الاولى باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1i54Dwu2nn5uau-qVi8ZNyZDtmRspLLg6/view?usp=drive_link"
   }
 ]
  

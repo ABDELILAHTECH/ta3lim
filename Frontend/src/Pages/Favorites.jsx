@@ -26,7 +26,8 @@ export default function Favorites() {
       <div className="rounded-lg p-4">
         <div className="flex items-center gap-2 cursor-pointer" onClick={() => setOpenLessons(!openLessons)}>
           <h2 className='text-3xl md:text-4xl font-bold'>دروس</h2>
-          {openLessons ? <ChevronUp size={30}/> : <ChevronDown size={30}/>}
+          <span>{openLessons ? <ChevronUp size={30}/> : <ChevronDown size={30}/>}</span>
+          <span className='bg-primary text-center text-xl  font-bold w-8 h-8 rounded-full'>{favoritesLessons.length}</span>
         </div>
         {openLessons && (
           <div className="mt-8 flex flex-wrap gap-4">
@@ -38,7 +39,8 @@ export default function Favorites() {
       <div className="rounded-lg p-4">
         <div className="flex items-center gap-2 cursor-pointer" onClick={() => setOpenExercises(!openExercises)}>
           <h2 className='text-3xl md:text-4xl  font-bold'>تمارين</h2>
-          {openExercises ? <ChevronUp size={30}/> : <ChevronDown size={30}/>}
+          <span>{openExercises ? <ChevronUp size={30}/> : <ChevronDown size={30}/>}</span>
+          <span className='bg-primary text-center text-xl  font-bold w-8 h-8 rounded-full'>{favoritesExercises.length}</span>
         </div>
         {openExercises && (
           <div className="mt-8 flex flex-wrap gap-4">
@@ -49,8 +51,9 @@ export default function Favorites() {
 
       <div className="rounded-lg p-4">
         <div className="flex items-center gap-2 cursor-pointer" onClick={() => setOpenMorakaba(!openMorakaba)}>
-          <h2 className='text-3xl md:text-4xl font-bold'>مراقبة مستمرة</h2>
-          {openMorakaba ? <ChevronUp size={30}/> : <ChevronDown size={30}/>}
+          <h2 className='text-3xl md:text-4xl font-bold'>فروض</h2>
+          <span>{openMorakaba ? <ChevronUp size={30}/> : <ChevronDown size={30}/>}</span>
+          <span className='bg-primary text-center text-xl  font-bold w-8 h-8 rounded-full'>{favoritesMorakaba.length}</span>
         </div>
         {openMorakaba && (
           <div className="mt-8 flex flex-wrap gap-4">
@@ -62,7 +65,8 @@ export default function Favorites() {
       <div className="rounded-lg p-4">
         <div className="flex items-center gap-2 cursor-pointer" onClick={() => setOpenExams(!openExams)}>
           <h2 className='text-3xl md:text-4xl font-bold'>امتحانات</h2>
-          {openExams ? <ChevronUp size={30}/> : <ChevronDown size={30}/>}
+          <span>{openExams ? <ChevronUp size={30}/> : <ChevronDown size={30}/>}</span>
+          <span className='bg-primary text-center text-xl  font-bold w-8 h-8 rounded-full'>{favoritesExams.length}</span>
         </div>
         {openExams && (
           <div className="mt-8 flex flex-wrap gap-4">
