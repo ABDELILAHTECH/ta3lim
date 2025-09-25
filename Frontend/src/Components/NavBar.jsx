@@ -1,55 +1,37 @@
 import React, { useContext } from 'react'
-import NavLink from './NavLink'
 import {ThemeContext} from "../Context/ThemeContext"
 import { BookOpen, FileText, GraduationCap, Heart, Moon, Sun } from 'lucide-react'
 import AppLogo from './AppLogo'
+import { Link } from 'react-router-dom'
+import Favorites from '../Pages/Favorites'
+import { FavoritesContext } from '../Context/FavoritesContext'
 
 export default function NavBar() {
-  const {theme,toggleTheme} = useContext(ThemeContext)
-  const navLinks = [
-    {
-      name:"دروس",
-      path:"/ressources",
-      icon:BookOpen,
-    },
-    {
-      name:"تمارين",
-      path:"/ressources",
-      icon:FileText,
-    },
-    {
-      name:"امتحانات",
-      path:"/ressources",
-      icon:GraduationCap,
-    },
-    {
-      name:"المقضلة",
-      path:"/favorite",
-      icon:Heart,
-    },
-  ]
+  const {theme,toggleTheme} = useContext(ThemeContext);
+  const {favorites} = useContext(FavoritesContext);
+ 
   return (
-    <header className='bg-light dark:bg-slate-900 fixed top-0 left-0 right-0 flex items-center justify-between px-5 py-5  md:px-12 lg-px-16 xl:px-20 z-100 bg-white' >
+    <header className='bg-light font-cairo dark:bg-slate-900 fixed top-0 left-0 right-0 flex items-center justify-between px-5 md:px-12 lg-px-16 xl:px-20 z-100 bg-white' >
         <div>
             <AppLogo />
         </div>
-        <nav className='flex gap-3 '>
-          <ul className='flex gap-2 sm:gap-5 items-center'> 
-            {
-              navLinks.map((navlink,index)=>
-              <li key={index} className=' flex justify-start gap-2  text-md w-8 sm:w-fit overflow-hidden hover:overflow-visible hover:ml-15   md:text-lg  lg:text-xl font-medium  dark:text-white font-cairo hover:text-primary transition duration-300 ease-in-out'>
-                <div className='sm:hidden'>
-                  <navlink.icon  />
-                </div>
-                <NavLink 
-                navLinkName={navlink.name}
-                 navLinkPath={navlink.path}
-              />
-              </li>)
-            }
+        <nav className='flex'>
+          <ul className='flex items-center'> 
+              <li>
+                 <Link to="/ressources" >
+                     <span className='font-bold text-lg sm:text-2xl sm:ml-5 dark:text-white hover:text-primary transition-colors duration-400 pt-2 px-3 '>الموارد</span>
+                 </Link>
+              </li>
+              <li className='relative pt-2 px-3 dark:text-white hover:text-primary ransition-colors duration-400'>
+                <Link to="/favorites" >
+                    <Heart size={30} />
+                </Link>
+                <span className='bg-primary text-white absolute top-1 right-0 rounded-full w-5 h-5 flex items-center justify-center'>{favorites.length}</span>
+              </li>
+              
           </ul>
-          <div onClick={toggleTheme} className=''>
-              {theme === "dark" ? <Moon color="white" className=''/> : <Sun />}
+          <div onClick={toggleTheme} className='hover:text-primary pt-2 px-3 transition-colors cursor-pointer duration-400 '>
+              {theme === "dark" ? <Moon size={30} color="white" className=''/> : <Sun size={30} />}
           </div>
         </nav>
     </header>

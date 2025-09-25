@@ -1,11 +1,22 @@
 import { ArrowUpRight , DownloadIcon, Heart } from 'lucide-react'
+import { useContext } from 'react'
+import { FavoritesContext } from '../Context/FavoritesContext'
 
 
 export default function DocumentCard({ressource}) {
-   
+  const {favorites,addToFavorites,removeFromFavorites} = useContext(FavoritesContext);
+  const isFavorite = favorites.some(fav => fav.title === ressource.title);
+
+  const favoriteBtnHandleClick = () => {
+      if (isFavorite) {
+         removeFromFavorites(ressource);
+      } else {
+         addToFavorites(ressource);
+  }
+  }
 
   return (
-    <div className='border-1 border-primary w-full sm:w-[47%] lg:w-[31%] px-4 py-5 rounded-lg shadow-lg hover:shadow-xl hover:scale-101 hover:border-2 transition duration-300'>
+    <div className='border-1 border-primary h-fit w-full sm:w-[47%] lg:w-[31%] px-4 py-5 rounded-lg shadow-lg hover:shadow-xl hover:scale-101 hover:border-2 transition duration-300'>
        <div className='flex items-start justify-between'>
           <div>
             <h2 className="font-bold text-3xl " > {ressource.subject}</h2>
@@ -13,8 +24,8 @@ export default function DocumentCard({ressource}) {
                 {ressource.title}  
             </div>
           </div>
-          <button>
-              <Heart />
+          <button className='' onClick={favoriteBtnHandleClick}>
+              <Heart fill={isFavorite ? "#4F9DFF" : "none"} />
           </button>  
        </div>
        <div className='mt-3 flex flex-wrap gap-2'>
@@ -22,14 +33,10 @@ export default function DocumentCard({ressource}) {
             <span className='bg-green-600 px-4 py-1 rounded-xl text-sm'>{ressource.class} </span>
             <span className='bg-yellow-500 px-4 py-1 rounded-xl text-sm'>{ressource.type} </span>
        </div>
-       <div className='flex justify-between mt-5'>
-         <a href={ressource.fileUrl}>
+       <div className='flex justify-end mt-5 hover:text-primary transition-colors duration-300 '>
+         <a target='_blank'  href={ressource.fileUrl}>
             <ArrowUpRight />
          </a>
-         <a href={ressource.downloadUrl}>
-            <DownloadIcon />
-         </a>
-         
        </div>
     </div>
   )

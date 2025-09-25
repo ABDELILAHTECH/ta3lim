@@ -6,7 +6,6 @@ export const LevelContext = createContext();
 
 export function LevelProvider ({ children }){
     const [level,setLevel] = useState(localStorage.getItem("level") || "الابتدائي");
-
      
     const toggleLevel = (newLevel) => {
         setLevel(newLevel)

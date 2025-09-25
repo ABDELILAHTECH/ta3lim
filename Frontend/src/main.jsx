@@ -10,22 +10,28 @@ import Home from "./Pages/Home.jsx"
 import { LevelProvider } from './Context/LevelContext.jsx';
 import { DocumentsTypesContext, DocumentsTypesProvider } from './Context/DocumentsTypesContext.jsx';
 import { RessourcesProvider } from './Context/RessourcesContext.jsx';
+import { FavoritesProvider } from './Context/FavoritesContext.jsx';
+import { ClassProvider } from './Context/ClassContext.jsx';
 createRoot(document.getElementById('root')).render(
   <RessourcesProvider>
     <ThemeProvider>
-      <LevelProvider>
-        <DocumentsTypesProvider>
-          <BrowserRouter>
-              <App />
-              <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/ressources' element={<Ressources />}/>
-                <Route path='/favorites' element={<Favorites />} />
-                <Route path='/*' />
-              </Routes>    
-          </BrowserRouter>
-        </DocumentsTypesProvider>  
-      </LevelProvider>  
+      <ClassProvider>
+         <LevelProvider>   
+           <DocumentsTypesProvider>
+             <FavoritesProvider>
+                <BrowserRouter>
+                    <App />
+                    <Routes>
+                      <Route path='/' element={<Home />} />
+                      <Route path='/ressources' element={<Ressources />}/>
+                      <Route path='/favorites' element={<Favorites />} />
+                      <Route path='/*' />
+                    </Routes>    
+                </BrowserRouter>
+             </FavoritesProvider>
+           </DocumentsTypesProvider>
+          </LevelProvider>  
+       </ClassProvider>      
     </ThemeProvider>
   </RessourcesProvider>  
 )

@@ -23,8 +23,8 @@ export default function LevelsCards() {
        {
         levels.map((level,index)=>{
             return(
-                <div key={index} className='w-full bg-slate-100 dark:bg-slate-800 dark:text-white shadow-xl flex-1 py-15 px-3
-                     rounded flex flex-col items-center gap-4  hover:scale-105 transition duration-500'>
+                <div key={index} className='w-full bg-white dark:bg-slate-800 dark:text-white shadow-xl flex-1 py-15 px-3
+                     rounded flex flex-col items-center gap-4  hover:scale-101 transition duration-500'>
                     <div className='rounded-full bg-primary p-3'>
                         <level.icon size={50} />
                     </div>

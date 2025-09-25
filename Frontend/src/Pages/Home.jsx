@@ -4,9 +4,9 @@ import LevelsCards from '../Components/LevelsCards'
 
 export default function Home() {
   return (
-    <div className='font-cairo'>
+    <div className='bg-light dark:bg-dark font-cairo'>
        <Hero />
-       <div className='bg-primary dark:bg-dark'>
+       <div className=''>
          <LevelsCards />
        </div>
        

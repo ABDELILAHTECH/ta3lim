@@ -1,12 +1,43 @@
 [
   {
     "title": "الفرض الأول المرحلة الأولى",
-    "type": "مراقبة مستمرة",
-    "subject": "رياضيات",
-    "class": "المستوى الأول",
+    "type": "المراقبة المستمرة",
+    "subject": "الرياضيات",
+    "class": "السنة الاولى",
     "level":"الابتدائي",
-    "fileUrl": "https://drive.google.com/file/d/1A97d0f3QUk1AxSCVYPfQNf-5rkcYIgFP/view?usp=sharing",
+    "fileUrl": "https://drive.google.com/file/d/1A97d0f3QUk1AxSCVYPfQNf-5rkcYIgFP/view?usp=sharing"
+  },
+  {
+    "title": "Limites et continuité part 1",
+    "type": "الدروس",
+    "subject": "الرياضيات",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1n1InEhaGLdyYFO7SM6VtiTaIoQpRVCpl/view?usp=sharing"
+  },
+  {
+    "title": "Limites et continuité part 2",
+    "type": "الدروس",
+    "subject": "الرياضيات",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1FzyhfqYdQe-4QHWx3xfkyq-BqJeWJpUT/view?usp=drive_link"
+  },
+  {
+    "title": "Limites et continuité part 3",
+    "type": "الدروس",
+    "subject": "الرياضيات",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1Si0EFv0oSU8LSmEbs2OVh1V4wUVPpqRx/view?usp=drive_link"
+  },
+  {
+    "title": "Limites et continuité part 4",
+    "type": "الدروس",
+    "subject": "الرياضيات",
+    "class": "السنة التانية باكالوريا",
+    "level":"الثانوي",
+    "fileUrl": "https://drive.google.com/file/d/1feLrvVTtfB98r2q-dGNa8KBozrqFOTIO/view?usp=drive_link"
   }
-
 ]
  
