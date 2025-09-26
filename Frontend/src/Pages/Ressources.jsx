@@ -1,7 +1,7 @@
 import React from 'react'
 import LevelsNav from '../Components/LevelsNav'
 import ClassNav from '../Components/ClassNav'
-import DocumentsCards from '../Components/documentsCards'
+import DocumentsCards from '../Components/DocumentsCards'
 import DocumentsTypesNav from '../Components/DocumentsTypesNav'
 
 export default function ContentPage() {
