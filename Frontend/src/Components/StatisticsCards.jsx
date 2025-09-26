@@ -16,8 +16,13 @@ const StatisticsCards = () => {
       label: "التمارين",
     },
     {
+      icon: FileText,
+      count: ressources.filter(ressource=>ressource.type ===  "الفروض").length,
+      label: "الفروض",
+    },
+    {
       icon: GraduationCap,
-      count: ressources.filter(ressource=>ressource.type ===  "الامتحانات" || ressource.type === "المراقبة المستمرة").length,
+      count: ressources.filter(ressource=>ressource.type ===  "الامتحانات").length,
       label: "الامتحانات",
     }
   ];
