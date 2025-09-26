@@ -23,7 +23,7 @@ export default function SearchBar() {
            <input onChange={handleSearch} type="text" className='focus:outline-none text-xl font-cairo' placeholder="دروس، تمارين، امتحانات" />
                 
        </form>
-       <ul>
+       <ul className='h-22 overflow-y-auto'>
               {
                results.map(result=><SearchDocumentCard ressource={result} />)
               }

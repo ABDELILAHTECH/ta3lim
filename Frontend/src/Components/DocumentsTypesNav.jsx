@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { DocumentsTypesContext } from '../Context/DocumentsTypesContext';
 
 export default function DocumentsTypesNav() {
-  const documentsTypes = ["الدروس","التمارين","الامتحانات","المراقبة المستمرة"];
+  const documentsTypes = ["الدروس","التمارين","الامتحانات","الفروض"];
   const {docsType,toggleDocsType} = useContext(DocumentsTypesContext)
   return (
     <nav className='mt-6'>
