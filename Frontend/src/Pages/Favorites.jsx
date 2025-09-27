@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { FavoritesContext } from '../Context/FavoritesContext'
 import DocumentCard from '../Components/DocumentCard'
 import { ChevronDown, ChevronUp } from 'lucide-react'
+import Footer from '../Components/Footer.jsx';
 
 export default function Favorites() {
   const { favorites } = useContext(FavoritesContext);
@@ -21,60 +22,63 @@ export default function Favorites() {
   const [openExams, setOpenExams] = useState(false);
 
   return (
-    <div className='font-cairo bg-light dark:bg-dark dark:text-white flex flex-col gap-5 min-h-screen pt-[120px] px-5 py-5 md:px-12 lg:px-16 xl:px-20'>
-      <h1 className='text-4xl md:text-5xl font-bold'>المقضلة</h1>
-      <div className="rounded-lg p-4">
-        <div className="flex items-center gap-2 cursor-pointer" onClick={() => setOpenLessons(!openLessons)}>
-          <h2 className='text-3xl md:text-4xl font-bold'>دروس</h2>
-          <span>{openLessons ? <ChevronUp size={30}/> : <ChevronDown size={30}/>}</span>
-          <span className='bg-primary text-center text-xl  font-bold w-8 h-8 rounded-full'>{favoritesLessons.length}</span>
-        </div>
-        {openLessons && (
-          <div className="mt-8 flex flex-wrap gap-4">
-            {favoritesLessons.map((fav, i) => <DocumentCard key={i} ressource={fav} />)}
+    <>
+      <div className='font-cairo bg-light dark:bg-dark dark:text-white flex flex-col gap-5 min-h-screen pt-[120px] px-5 py-5 md:px-12 lg:px-16 xl:px-20'>
+        <h1 className='text-4xl md:text-5xl font-bold'>المقضلة</h1>
+        <div className="rounded-lg p-4">
+          <div className="flex items-center gap-2 cursor-pointer" onClick={() => setOpenLessons(!openLessons)}>
+            <h2 className='text-3xl md:text-4xl font-bold'>دروس</h2>
+            <span>{openLessons ? <ChevronUp size={30}/> : <ChevronDown size={30}/>}</span>
+            <span className='bg-primary text-center text-xl  font-bold w-8 h-8 rounded-full'>{favoritesLessons.length}</span>
           </div>
-        )}
-      </div>
-
-      <div className="rounded-lg p-4">
-        <div className="flex items-center gap-2 cursor-pointer" onClick={() => setOpenExercises(!openExercises)}>
-          <h2 className='text-3xl md:text-4xl  font-bold'>تمارين</h2>
-          <span>{openExercises ? <ChevronUp size={30}/> : <ChevronDown size={30}/>}</span>
-          <span className='bg-primary text-center text-xl  font-bold w-8 h-8 rounded-full'>{favoritesExercises.length}</span>
+          {openLessons && (
+            <div className="mt-8 flex flex-wrap gap-4">
+              {favoritesLessons.map((fav, i) => <DocumentCard key={i} ressource={fav} />)}
+            </div>
+          )}
         </div>
-        {openExercises && (
-          <div className="mt-8 flex flex-wrap gap-4">
-            {favoritesExercises.map((fav, i) => <DocumentCard key={i} ressource={fav} />)}
+      
+        <div className="rounded-lg p-4">
+          <div className="flex items-center gap-2 cursor-pointer" onClick={() => setOpenExercises(!openExercises)}>
+            <h2 className='text-3xl md:text-4xl  font-bold'>تمارين</h2>
+            <span>{openExercises ? <ChevronUp size={30}/> : <ChevronDown size={30}/>}</span>
+            <span className='bg-primary text-center text-xl  font-bold w-8 h-8 rounded-full'>{favoritesExercises.length}</span>
           </div>
-        )}
-      </div>
-
-      <div className="rounded-lg p-4">
-        <div className="flex items-center gap-2 cursor-pointer" onClick={() => setOpenMorakaba(!openMorakaba)}>
-          <h2 className='text-3xl md:text-4xl font-bold'>فروض</h2>
-          <span>{openMorakaba ? <ChevronUp size={30}/> : <ChevronDown size={30}/>}</span>
-          <span className='bg-primary text-center text-xl  font-bold w-8 h-8 rounded-full'>{favoritesMorakaba.length}</span>
+          {openExercises && (
+            <div className="mt-8 flex flex-wrap gap-4">
+              {favoritesExercises.map((fav, i) => <DocumentCard key={i} ressource={fav} />)}
+            </div>
+          )}
         </div>
-        {openMorakaba && (
-          <div className="mt-8 flex flex-wrap gap-4">
-            {favoritesMorakaba.map((fav, i) => <DocumentCard key={i} ressource={fav} />)}
+      
+        <div className="rounded-lg p-4">
+          <div className="flex items-center gap-2 cursor-pointer" onClick={() => setOpenMorakaba(!openMorakaba)}>
+            <h2 className='text-3xl md:text-4xl font-bold'>فروض</h2>
+            <span>{openMorakaba ? <ChevronUp size={30}/> : <ChevronDown size={30}/>}</span>
+            <span className='bg-primary text-center text-xl  font-bold w-8 h-8 rounded-full'>{favoritesMorakaba.length}</span>
           </div>
-        )}
-      </div>
-
-      <div className="rounded-lg p-4">
-        <div className="flex items-center gap-2 cursor-pointer" onClick={() => setOpenExams(!openExams)}>
-          <h2 className='text-3xl md:text-4xl font-bold'>امتحانات</h2>
-          <span>{openExams ? <ChevronUp size={30}/> : <ChevronDown size={30}/>}</span>
-          <span className='bg-primary text-center text-xl  font-bold w-8 h-8 rounded-full'>{favoritesExams.length}</span>
+          {openMorakaba && (
+            <div className="mt-8 flex flex-wrap gap-4">
+              {favoritesMorakaba.map((fav, i) => <DocumentCard key={i} ressource={fav} />)}
+            </div>
+          )}
         </div>
-        {openExams && (
-          <div className="mt-8 flex flex-wrap gap-4">
-            {favoritesExams.map((fav, i) => <DocumentCard key={i} ressource={fav} />)}
+      
+        <div className="rounded-lg p-4">
+          <div className="flex items-center gap-2 cursor-pointer" onClick={() => setOpenExams(!openExams)}>
+            <h2 className='text-3xl md:text-4xl font-bold'>امتحانات</h2>
+            <span>{openExams ? <ChevronUp size={30}/> : <ChevronDown size={30}/>}</span>
+            <span className='bg-primary text-center text-xl  font-bold w-8 h-8 rounded-full'>{favoritesExams.length}</span>
           </div>
-        )}
+          {openExams && (
+            <div className="mt-8 flex flex-wrap gap-4">
+              {favoritesExams.map((fav, i) => <DocumentCard key={i} ressource={fav} />)}
+            </div>
+          )}
+        </div>
+      
       </div>
-
-    </div>
+      <Footer />
+    </>  
   )
 }

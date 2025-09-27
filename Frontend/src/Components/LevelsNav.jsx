@@ -8,12 +8,12 @@ export default function LevelsNav() {
 
 
   return (
-    <nav className='w-full bg-primary rounded-4xl'>
+    <nav className='w-full bg-primary '>
             <ul className='flex justify-center'>
                 {
                     levels.map((levelItem,index)=>{
                         return(
-                            <li key={index} onClick={() => toggleLevel(levelItem)} className={`text-lg text-center md:text-2xl lg:text-3xl  py-2 rounded-4xl flex-1 cursor-pointer border-1 border-primary   ${levelItem === level ? "bg-white dark:bg-dark "  : ""} `}>{levelItem}</li>
+                            <li key={index} onClick={() => toggleLevel(levelItem)} className={`text-lg text-center md:text-2xl lg:text-3xl  py-5 flex-1 cursor-pointer  border-b-4 border-primary   ${levelItem === level ? " border-slate-900 dark:border-white"  : ""} `}>{levelItem}</li>
                         )
                     })
                 }

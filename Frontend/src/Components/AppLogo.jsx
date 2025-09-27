@@ -2,9 +2,12 @@ import { Link } from "react-router-dom";
 import logo from "../assets/AppLogo.png";
 
 export default function AppLogo() {
+   const handleClick = () => {
+      window.scrollTo(0,0)
+   }
   return (
      <span className='text-primary font-black  font-kufi text-3xl md:text-4xl lg:text-5xl'>
-          <Link to="/" >
+          <Link to="/" onClick={handleClick}>
              <img src={logo} className="h-20 W" alt="" /> 
           </Link>             
      </span>
