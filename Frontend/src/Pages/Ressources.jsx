@@ -3,6 +3,7 @@ import LevelsNav from '../Components/LevelsNav'
 import ClassNav from '../Components/ClassNav'
 import DocumentsCards from '../Components/DocumentsCards'
 import DocumentsTypesNav from '../Components/DocumentsTypesNav'
+import SubjectNav from '../Components/SubjectNav'
 import Footer from '../Components/Footer'
 
 export default function ContentPage() {
@@ -16,6 +17,7 @@ export default function ContentPage() {
               <div className=''>
                   <ClassNav />
                   <DocumentsTypesNav />
+                  <SubjectNav />
               </div>
               <DocumentsCards />
           </div>

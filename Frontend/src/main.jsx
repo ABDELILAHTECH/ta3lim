@@ -8,6 +8,7 @@ import { DocumentsTypesProvider } from './Context/DocumentsTypesContext.jsx';
 import { RessourcesProvider } from './Context/RessourcesContext.jsx';
 import { FavoritesProvider } from './Context/FavoritesContext.jsx';
 import { ClassProvider } from './Context/ClassContext.jsx';
+import { SubjectProvider } from './Context/SubjectContext.jsx';
 import { BrowserRouter } from 'react-router-dom';
 createRoot(document.getElementById('root')).render(
   <BrowserRouter >
@@ -16,10 +17,12 @@ createRoot(document.getElementById('root')).render(
       <ClassProvider>
          <LevelProvider>   
            <DocumentsTypesProvider>
-             <FavoritesProvider>
-                <App />
-                
-             </FavoritesProvider>
+             <SubjectProvider>
+               <FavoritesProvider>
+                  <App />
+                  
+               </FavoritesProvider>
+             </SubjectProvider>
            </DocumentsTypesProvider>
           </LevelProvider>  
        </ClassProvider>      
