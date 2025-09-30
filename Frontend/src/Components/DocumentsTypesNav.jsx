@@ -1,12 +1,23 @@
 import { useContext } from 'react';
 import { DocumentsTypesContext } from '../Context/DocumentsTypesContext';
+import { LevelContext } from '../Context/LevelContext';
 
 export default function DocumentsTypesNav() {
-  const documentsTypes = ["الدروس","التمارين","الامتحانات","الفروض"];
+  const {level} = useContext(LevelContext);
+  let documentsTypes;
+  if (level === "الابتدائي") {
+    documentsTypes = ["الفروض","الدروس"];
+  }else if(level === "الإعدادي"){
+    documentsTypes = ["الفروض","التمارين","الدروس"];
+  }else if(level === "الثانوي"){
+    documentsTypes = ["الامتحانات","الفروض","التمارين","الدروس"];
+  }else{
+    documentsTypes = [];
+  }
   const {docsType,toggleDocsType} = useContext(DocumentsTypesContext)
   return (
-    <nav className='mt-6'>
-       <ul className='flex-wrap flex lg:flex-col gap-3'>
+    <nav className=''>
+       <ul className='flex flex-wrap gap-3'>
           {
             documentsTypes.map((type,index) =>  {
               return (

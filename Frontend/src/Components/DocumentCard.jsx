@@ -16,9 +16,9 @@ export default function DocumentCard({ressource}) {
   }
 
   return (
-    <div className='border-1 border-primary min-h-fit w-full sm:w-[47%] lg:w-[31%] px-4 py-5 rounded-lg shadow-lg hover:shadow-xl hover:scale-101 hover:border-2 transition duration-300'>
+    <div className='border-1 border-primary min-h-fit w-full sm:w-[47%] lg:w-[31%] px-4 py-5 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 hover:border-2 transition duration-300'>
        <div className='flex items-start justify-between'>
-          <div className='text-md font-bold h-10 w-[90%] '>
+          <div className='text-md font-bold h-12 overflow-hidden hover:overflow-visible hover:h-fit transition-all duration-800 w-[90%] '>
                 {ressource.title}  
           </div>
           <button className='' onClick={favoriteBtnHandleClick}>

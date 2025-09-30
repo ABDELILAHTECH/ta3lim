@@ -13,13 +13,16 @@ export default function ContentPage() {
           <div className=''>
             <LevelsNav />
           </div>
-          <div className='flex flex-col lg:flex-row gap-4  w-full my-8'>
-              <div className=''>
-                  <ClassNav />
-                  <DocumentsTypesNav />
+          <div className='flex flex-col gap-4  w-full my-8'>
+                  <div className='flex items-center flex-wrap gap-4'>
+                     <ClassNav />
+                     <DocumentsTypesNav />
+                  </div>
+                  
+                <div className='flex flex-col lg:flex-row gap-4 '>
                   <SubjectNav />
-              </div>
-              <DocumentsCards />
+                  <DocumentsCards />
+                </div>
           </div>
       </div>
       <Footer />

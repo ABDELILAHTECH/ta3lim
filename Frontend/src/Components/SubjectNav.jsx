@@ -1,14 +1,27 @@
 import { useContext } from 'react';
 import { SubjectContext } from '../Context/SubjectContext';
-
+import { LevelContext } from '../Context/LevelContext';
 export default function SubjectNav() {
-  const subjects = ["الرياضيات", "الفيزياء", "علوم الحياة و الأرض", "الانجليزية", "اللغة العربية", "اللغة الفرنسية"];
+  const {level} = useContext(LevelContext);
+  let subjects;
+  if (level === "الابتدائي") {
+     subjects = ["الرياضيات", "النشاط العلمي", "التربية الإسلامية", "الاجتماعيات", "اللغة العربية", "اللغة الفرنسية"];
+  }else if(level === "الإعدادي"){
+       subjects = ["الرياضيات","التربية الإسلامية","الفيزياء و الكمياء", "علوم الحياة و الأرض", "الانجليزية","الاجتماعيات", "اللغة العربية", "اللغة الفرنسية"];
+
+  }else if(level === "الثانوي"){
+       subjects = ["الرياضيات","الفلسفة","التربية الإسلامية","الفيزياء و الكمياء", "علوم الحياة و الأرض", "الانجليزية","الاجتماعيات", "اللغة العربية", "اللغة الفرنسية"];
+
+  }else{
+       subjects = []
+  }
   const {subject, toggleSubject} = useContext(SubjectContext);
+
   
   return (
-    <nav className='mt-6'>
+    <nav className=''>
        <h3 className='text-lg font-semibold mb-3 text-primary dark:text-primary-light'>المواد</h3>
-       <ul className='flex-wrap flex lg:flex-col gap-3'>
+       <ul className='flex flex-wrap lg:flex-col lg:w-50 gap-3'>
           {
             subjects.map((subjectItem, index) => {
               return (
