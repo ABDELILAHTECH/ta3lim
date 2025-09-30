@@ -20,7 +20,6 @@ export default function ContentPage() {
                   </div>
                   
                 <div className='flex flex-col lg:flex-row gap-4 '>
-                  <SubjectNav />
                   <DocumentsCards />
                 </div>
           </div>

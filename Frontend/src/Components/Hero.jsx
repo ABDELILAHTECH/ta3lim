@@ -11,7 +11,7 @@ export default function Hero() {
     <section className=' font-cairo bg-light dark:bg-slate-900 '>
         <div className='relative pt-[120px] lg-mx-16 xl:mx-20 min-h-screen flex flex-col  items-center '>
            <div className='flex flex-col items-center  '>
-             <p className='dark:text-white font-kufi font-bold text-3xl sm:text-4xl lg:text-5xl w-[80%] md:w-[70%] lg:w-[60%] text-center leading-relaxed'>
+             <p className='text-primary font-kufi font-bold text-3xl sm:text-4xl lg:text-5xl w-[80%] md:w-[70%] lg:w-[60%] text-center leading-relaxed'>
               مهمتنا توفير جميع الموارد الدراسية التي ستحتاجها في رحلتك الدراسية
              </p>
            </div>

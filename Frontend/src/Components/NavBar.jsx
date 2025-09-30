@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import {ThemeContext} from "../Context/ThemeContext"
-import { BookOpen, FileText, GraduationCap, Heart, Moon, Sun } from 'lucide-react'
+import { BookOpen  , FileText, GraduationCap, Heart, Moon, Sun, Globe, MapPin } from 'lucide-react'
 import AppLogo from './AppLogo'
 import { Link } from 'react-router-dom'
 import { FavoritesContext } from '../Context/FavoritesContext'
@@ -16,11 +16,25 @@ export default function NavBar() {
         <div>
             <AppLogo />
         </div>
-        <nav className='flex'>
+        <nav className='flex font-kufi'>
           <ul className='flex items-center'> 
               <li>
                  <Link to="/ressources" onClick={handleClick} >
-                     <span className='font-bold text-lg sm:text-2xl sm:ml-5 dark:text-white hover:text-primary transition-colors duration-400 pt-2 px-3 '>الموارد</span>
+                     <span className='font-bold text-lg sm:text-xl sm:ml-5 dark:text-white hover:text-primary transition-colors duration-400 pt-2 px-3 '>الموارد</span>
+                 </Link>
+              </li>
+              <li>
+                 <Link to="/national" onClick={handleClick} >
+                     <span className='font-bold text-lg sm:text-xl sm:ml-5 dark:text-white hover:text-primary transition-colors duration-400 pt-2 px-3 '>
+                       الوطني
+                     </span>
+                 </Link>
+              </li>
+              <li>
+                 <Link to="/regional" onClick={handleClick} >
+                     <span className='font-bold text-lg sm:text-xl sm:ml-5 dark:text-white hover:text-primary transition-colors duration-400 pt-2 px-3'>
+                       الجهوي
+                     </span>
                  </Link>
               </li>
               <li className='relative pt-2 px-3 dark:text-white hover:text-primary ransition-colors duration-400'>

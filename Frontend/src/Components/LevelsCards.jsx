@@ -38,7 +38,7 @@ export default function LevelsCards() {
                     <div className='rounded-full bg-primary p-3'>
                         <level.icon size={50} />
                     </div>
-                    <h3 className='font-bold text-3xl '>{level.title}</h3>
+                    <h3 className='font-bold text-primary font-kufi text-3xl '>{level.title}</h3>
                     <p className='text-center'> 
                       استكشف مواردنا للمستوى {level.title} 
                     </p>

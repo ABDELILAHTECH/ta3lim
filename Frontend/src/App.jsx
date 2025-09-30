@@ -4,6 +4,8 @@ import { Route, Routes } from 'react-router-dom'
 import Favorites from "./Pages/Favorites.jsx";
 import Ressources from "./Pages/Ressources.jsx"
 import Home from "./Pages/Home.jsx"
+import National from "./Pages/National.jsx"
+import Regional from "./Pages/Regional.jsx"
 function App() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -16,6 +18,8 @@ function App() {
            <Route path='/' element={<Home />} />
            <Route path='/ressources' element={<Ressources />}/>
            <Route path='/favorites' element={<Favorites />} />
+           <Route path='/national' element={<National />} />
+           <Route path='/regional' element={<Regional />} />
            <Route path='/*' />
          </Routes>    
        <button

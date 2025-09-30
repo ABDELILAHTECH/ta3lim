@@ -35,7 +35,7 @@ export default function DocumentsCards() {
      })
 
   return (
-    <div className='flex items-start flex-wrap gap-4 h-fit w-full'>
+    <div className='flex justify-center flex-wrap gap-4 h-fit w-full'>
         {
           ressourcesFiltred.map((ressource,index)=>{
             return(
