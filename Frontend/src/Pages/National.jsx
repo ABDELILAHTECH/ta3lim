@@ -5,14 +5,14 @@ import Footer from '../Components/Footer'
 export default function National() {
   return (
     <>
-      <div className='bg-light dark:bg-dark font-kufi min-h-screen pt-20'>
+      <div className='bg-light dark:bg-dark font-kufi bg-green-200 min-h-screen pt-20'>
         {/* Hero Section */}
         <div className=' text-primary w-full mt-20'>
             <h1 className='text-center text-4xl md:text-5xl font-bold mb-4'>الامتحان الوطني الموحد للبكالوريا</h1>
         </div>
 
         {/* Main Content */}
-        <div className='container mx-auto px-4 py-12'>
+        <div className='mx-20 px-4 py-12'>
           {/* Quick Stats */}
           <div className='flex justify-center items-center gap-4 w-full '>
             <div className='bg-white flex gap-2 dark:bg-slate-800 p-3 rounded-lg shadow-md text-center'>

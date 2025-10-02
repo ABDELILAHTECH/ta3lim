@@ -11,7 +11,7 @@ export function FavoritesProvider ({children}){
          setFavorites(prev=>[...prev,document]);
       }
       const removeFromFavorites = (document) => {
-         setFavorites(favorites.filter(favorite=>favorite._id !== document._id))
+         setFavorites(favorites.filter(favorite=>favorite.title !== document.title))
       }
 
       useEffect(()=>{
