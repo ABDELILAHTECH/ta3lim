@@ -2265,4 +2265,4 @@ export const regionalExams = [
     "fileUrl": "https://drive.google.com/file/d/1Y441fNSyPdjI7XZuIziPQOF_KEIBKjR2/view?usp=drivesdk"
   }
 ]
-console.log(regionalExams[regionalExams.length - 1]);
+console.log(regionalExams.length );

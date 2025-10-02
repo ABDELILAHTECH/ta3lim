@@ -11,12 +11,16 @@ export function SubjectProvider ({ children }){
         setSubject(newSubject);
     };
 
+    const clearSubject = () => {
+        setSubject("");
+    };
+
     useEffect(()=>{
         localStorage.setItem("subject",subject);
     },[subject]);
 
     return(
-        <SubjectContext.Provider value={{subject,toggleSubject}}>
+        <SubjectContext.Provider value={{subject,toggleSubject,clearSubject}}>
             {children}
         </SubjectContext.Provider>
     )

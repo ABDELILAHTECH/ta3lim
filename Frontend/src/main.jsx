@@ -10,6 +10,7 @@ import { FavoritesProvider } from './Context/FavoritesContext.jsx';
 import { ClassProvider } from './Context/ClassContext.jsx';
 import { SubjectProvider } from './Context/SubjectContext.jsx';
 import { RegionProvider } from './Context/RegionContext.jsx';
+import { CompletedExamsProvider } from './Context/CompletedExamsContext.jsx';
 import { BrowserRouter } from 'react-router-dom';
 createRoot(document.getElementById('root')).render(
   <BrowserRouter >
@@ -20,10 +21,12 @@ createRoot(document.getElementById('root')).render(
            <DocumentsTypesProvider>
              <SubjectProvider>
                <RegionProvider>
-                 <FavoritesProvider>
-                    <App />
-                    
-                 </FavoritesProvider>
+                 <CompletedExamsProvider>
+                   <FavoritesProvider>
+                      <App />
+                      
+                   </FavoritesProvider>
+                 </CompletedExamsProvider>
                </RegionProvider>
              </SubjectProvider>
            </DocumentsTypesProvider>

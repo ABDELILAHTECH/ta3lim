@@ -12,12 +12,16 @@ export function DocumentsTypesProvider ({ children }){
         setDocsType(docsType);
     };
 
+    const clearDocsType = () => {
+        setDocsType("");
+    };
+
     useEffect(()=>{
         localStorage.setItem("docsType",docsType);
     },[docsType]);
 
     return(
-        <DocumentsTypesContext.Provider value={{docsType,toggleDocsType}}>
+        <DocumentsTypesContext.Provider value={{docsType,toggleDocsType,clearDocsType}}>
             {children}
         </DocumentsTypesContext.Provider>
     )

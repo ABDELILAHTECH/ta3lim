@@ -6,8 +6,12 @@ export const ClassContext = createContext();
 export function ClassProvider ({ children }){
     const [classItem,setClassItem] = useState("");
 
+    const clearClass = () => {
+        setClassItem("");
+    };
+
     return(
-        <ClassContext.Provider value={{classItem,setClassItem}}>
+        <ClassContext.Provider value={{classItem,setClassItem,clearClass}}>
             {children}
         </ClassContext.Provider>
     )

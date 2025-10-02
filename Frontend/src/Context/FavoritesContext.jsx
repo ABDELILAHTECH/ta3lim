@@ -13,6 +13,10 @@ export function FavoritesProvider ({children}){
       const removeFromFavorites = (document) => {
          setFavorites(favorites.filter(favorite=>favorite.title !== document.title))
       }
+      
+      const clearFavorites = () => {
+         setFavorites([])
+      }
 
       useEffect(()=>{
         localStorage.setItem("favorites",JSON.stringify(favorites))
@@ -20,7 +24,7 @@ export function FavoritesProvider ({children}){
         
       })
       return(
-         <FavoritesContext.Provider value={{favorites,addToFavorites,removeFromFavorites}}>
+         <FavoritesContext.Provider value={{favorites,addToFavorites,removeFromFavorites,clearFavorites}}>
             {children}
          </FavoritesContext.Provider>
     )

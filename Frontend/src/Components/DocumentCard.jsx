@@ -29,6 +29,7 @@ export default function DocumentCard({ressource}) {
          <div className=' text-white flex flex-wrap gap-2'>
               <span className='bg-orange-500 font-bold px-4 py-1 rounded-xl text-sm'>{ressource.subject} </span>
               <span className='bg-green-600 font-bold px-4 py-1 rounded-xl text-sm'>{ressource.class} </span>
+              <span className='bg-blue-500 font-bold px-4 py-1 rounded-xl text-sm'>{ressource.level} </span>
               <span className='bg-yellow-500 font-bold px-4 py-1 rounded-xl text-sm'>{ressource.type} </span>
          </div>
            <a className='' target='_blank'  href={ressource.fileUrl}>

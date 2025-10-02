@@ -10,7 +10,7 @@ export default function DocumentsTypesNav() {
   }else if(level === "الإعدادي"){
     documentsTypes = ["الفروض","التمارين","الدروس"];
   }else if(level === "الثانوي"){
-    documentsTypes = ["الامتحانات","الفروض","التمارين","الدروس"];
+    documentsTypes = ["الفروض","التمارين","الدروس"];
   }else{
     documentsTypes = [];
   }

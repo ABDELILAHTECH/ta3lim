@@ -1,13 +1,15 @@
 import React, { useContext, useState, useMemo } from 'react'
-import { BookOpen, FileText, TrendingUp, Heart, Download, ArrowUpRight, X } from 'lucide-react'
+import { BookOpen, FileText, TrendingUp, Heart, Download, ArrowUpRight, X, Check } from 'lucide-react'
 import Footer from '../Components/Footer'
 import { regionalExams } from '../RegionalExams'
 import { FavoritesContext } from '../Context/FavoritesContext'
 import { RegionContext } from '../Context/RegionContext'
+import { CompletedExamsContext } from '../Context/CompletedExamsContext'
 
 export default function Regional() {
     const {favorites,addToFavorites,removeFromFavorites} = useContext(FavoritesContext);
     const {selectedRegion, selectedSubject, toggleRegion, toggleSubject, clearFilters} = useContext(RegionContext);
+    const {toggleCompleted, isCompleted} = useContext(CompletedExamsContext);
     
     const favoriteBtnHandleClick = (ressource) => {
       const isFavorite = favorites.some(fav => fav.title === ressource.title);
@@ -244,8 +246,24 @@ export default function Regional() {
 
           <div className='flex flex-col gap-2 lg:px-60 px-4'>
             {filteredExams.map((exam, index) => (
-              <div key={index} className='bg-white dark:bg-slate-800 flex justify-between items-center gap-2 px-8 py-4 rounded-lg shadow-lg hover:shadow-lg transition-shadow cursor-pointer'> 
-                <h3 className='text-md font-bold '>{exam.title}</h3>
+              <div key={index} className={`bg-white dark:bg-slate-800 flex justify-between items-center gap-2 px-8 py-4 rounded-lg shadow-lg hover:shadow-lg transition-all cursor-pointer ${
+                isCompleted(exam.title) ? 'border-l-4 border-green-500 bg-green-50 dark:bg-green-900/20' : ''
+              }`}> 
+                <div className='flex items-center gap-3'>
+                  <button 
+                    onClick={() => toggleCompleted(exam.title)}
+                    className={`w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all ${
+                      isCompleted(exam.title) 
+                        ? 'bg-green-500 border-green-500 text-white' 
+                        : 'border-gray-300 dark:border-gray-600 hover:border-green-500'
+                    }`}
+                  >
+                    {isCompleted(exam.title) && <Check size={14} />}
+                  </button>
+                  <h3 className={`text-md font-bold dark:text-white ${isCompleted(exam.title) ? 'line-through text-gray-500 dark:text-gray-400' : ''}`}>
+                    {exam.title}
+                  </h3>
+                </div>
                 <div className='flex gap-4'>
                   <a href={exam.fileUrl} target='_blank'>
                     <ArrowUpRight className='hover:text-primary transition' />
