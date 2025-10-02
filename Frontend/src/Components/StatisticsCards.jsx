@@ -3,6 +3,8 @@ import { useContext, useMemo } from "react";
 import { RessourcesContext } from "../Context/RessourcesContext";
 import { DocumentsTypesContext } from "../Context/DocumentsTypesContext"
 import { Link } from "react-router-dom"
+import { regionalExams } from "../RegionalExams";
+import { nationalExams } from "../NationalExams";
 const StatisticsCards = () => {
   const {ressources} = useContext(RessourcesContext);
   const {toggleDocsType} = useContext(DocumentsTypesContext);
@@ -40,7 +42,7 @@ const StatisticsCards = () => {
     },
     {
       icon: GraduationCap,
-      count: ressources.filter(ressource => ressource.type === "الامتحانات").length,
+      count: regionalExams.length + nationalExams.length,
       label: "الامتحانات",
       color: "from-orange-500 to-orange-600",
       bgColor: "bg-orange-50 dark:bg-orange-900/20",
