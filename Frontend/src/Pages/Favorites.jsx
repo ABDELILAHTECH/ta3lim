@@ -37,7 +37,7 @@ export default function Favorites() {
     <>
       <div className='font-cairo bg-light dark:bg-dark dark:text-white flex flex-col gap-5 min-h-screen pt-[120px] px-5 py-5 md:px-12 lg:px-16 xl:px-20'>
         {/* Header avec statistiques et bouton reset */}
-        <div className='flex flex-col md:flex-row justify-between items-start gap-4'>
+        <div className='flex flex-col justify-between items-start gap-4'>
           <div className='text-center w-full'>
             <h1 className='text-4xl md:text-5xl text-center font-bold'>المفضلة</h1>
             <div className='flex justify-center gap-6 mt-2'>
